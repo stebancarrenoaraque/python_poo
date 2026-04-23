@@ -83,3 +83,5 @@ def main ():
 if __name__ == main():
     main()
 ```
+## representacion grafica en ram del objeto creado
+![RAM](img/RAM.jpeg)

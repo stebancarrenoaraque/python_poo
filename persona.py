@@ -12,7 +12,7 @@ class persona:
 
 def main ():
     print("vamos a aprender poo...")
-    persona_1 = persona(lorenzo, perez, 18)
+    persona_1 = persona("lorenzo", "perez", 18)
     persona_1.mostrarpersona()
 
 if __name__ == main():
