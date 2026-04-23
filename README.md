@@ -36,7 +36,7 @@ class nombre de la clase:
 
 - `NombreClase` : nombre de la clase que se quiere crear
 
-- `def` : palabra reservada en python que se utiliza para definir tanto el contructor de la clase(metodo que se ejecuta la primera vez que se una una clase) como los diferentes metodos que tiene.
+- `def` : palabra reservada en python que se utiliza para definir tanto el contructor de la clase(metodo que se ejecuta la primera vez que se usa una clase) como los diferentes metodos que tiene.
 
 - `__init__`  : palabra reservada en python para definir el metodo constructor de la clase. el metodo `__init__`  : es lo primero que se ejecuta cuando creas un objeto de una clase.
 
@@ -54,3 +54,32 @@ class nombre de la clase:
 - puedes definir tantos atributos como nesesites
 - puedes definir tantos metodos como nesesites
 - puedes definir tantos parametros en el contructor y en los metodos como nesesites
+
+## Ejemplo 1
+- crear una clase que represente una persona
+- Atrubutos: nombre apellido y edad.
+- metodos: mostrar la informacion de la persona
+
+### Codigo
+
+``` py
+class persona:
+    def __init__(self, nombre, apellidos, edad):
+        self.nombre = nombre
+        self.apellidos = apellidos
+        self.edad = edad
+
+# Metodo para mostrar el nombre de la persona
+    def mostrarpersona(self):
+        print("nombre: ", self.nombre)
+        print("apellidos: ", self.apellidos)
+        print("edad: ", self.edad)
+
+def main ():
+    print("vamos a aprender poo...")
+    persona_1 = persona(lorenzo, perez, 18)
+    persona_1.mostrarpersona()
+
+if __name__ == main():
+    main()
+```
