@@ -58,7 +58,25 @@ class Alumno(Persona):
         print("\tMatrículas: ", self.__Asignaturas)
 
 class Profesor(Persona):
-    pass
+    def __init__(self):
+        self.__antiguedad = ""
+        self.__tutorias = ""
+        self.__telefono = ""
+
+    def getantiguedad(self):
+        return self.__antiguedad
+    def setantiguedad(self, antiguedad):
+        self.__antiguedad = antiguedad
+
+    def gettutorias(self):
+        return self.__tutorias
+    def settutorias(self, tutorias):
+        self.__tutorias = tutorias
+
+    def gettelefono(self):
+        return self.__telefono
+    def settelefono(self, telefono):
+        self.__telefono = telefono
 
 # metodo principal
 def main():
